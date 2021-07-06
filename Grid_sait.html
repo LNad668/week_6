@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .body {
+            background-color: #26203D;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr;
+        }
+
+        .sideb {
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+            border: springgreen solid 1px;
+            justify-content: space-between;
+        }
+
+        H1 {
+            font-weight: bolder;
+            font-family: Montserrat;
+            color: #fff;
+            font-size: 500%;
+        }
+
+        ul {
+            color: #fff;
+            font-family: Open, Sans;
+            font-size: 140%;
+            font-style: normal;
+        }
+
+        h3 {
+            color: rgba(134, 109, 26, 1);
+            width: 265px;
+            height: 35px;
+        }
+
+        .knop {
+            height: 50px;
+            width: 290px;
+            background-color: rgba(255, 206, 5, 1);
+        }
+
+        .man {
+            grid-row: 1 / 2;
+            grid-column: 2 / 3;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 2fr 1fr;
+            border: tomato solid 1px;
+        }
+
+        .coll-1 {
+            grid-column: 1/3;
+            grid-row: 1/2;
+            border: hotpink;
+        }
+
+        .coll-2 {
+            grid-column: 3/5;
+            grid-row: 1/2;
+            border: khaki;
+        }
+
+        .coll-3 {
+            grid-column: 1/2;
+            grid-row: 2/3;
+
+        }
+
+        .coll-4 {
+            grid-column: 2/3;
+            grid-row: 2/3;
+            width: 25%;
+        }
+
+        .coll-5 {
+            grid-column: 3/4;
+            grid-row: 2/3;
+            width: 25%;
+        }
+
+        .coll-6 {
+            grid-column: 4/5;
+            grid-row: 2/3;
+            width: 25%;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <sidebar class="sideb">
+        <button class="knop">
+            <h3>Free vector Illustration</h3>
+        </button>
+        <h1>
+            FREE ILLUSTRATION
+        </h1>
+        <ul>
+            <li>Made with Figma</li>
+            <li>Vector designs</li>
+            <li>Free to edit and use</li>
+            <li>Open-source</li>
+            <li>Versatile usage</li>
+        </ul>
+    </sidebar>
+
+    <main class="man">
+        <div class="coll-1" style="width: 50%;">
+            <img src="Mockup.jpg">
+        </div>
+        <div class="coll-2" style="width: 50%;">
+            <img src="Reference.jpg">
+        </div>
+        <div class="coll-3" style="width: 25%;">
+            <img src="lady.jpg">
+        </div>
+        <div class="coll-4" style="width: 25%;">
+            <img src="Century.jpg">
+        </div>
+        <div class="coll-5" style="width: 25%;">
+            <img src="Mona.jpg">
+        </div>
+        <div class="coll-6" style="width: 25%;">
+            <img src="Frida.jpg">
+        </div>
+    </main>
+</body>
+
+</html>
